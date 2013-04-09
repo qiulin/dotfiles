@@ -1,1 +1,3 @@
-/root/.spf13-vim-3/.vimrc.bundles.fork
+Bundle "qiulin/TagHighlight"
+Bundle "qiulin/conqueshell"
+Bundle "bufexplorer.zip"
