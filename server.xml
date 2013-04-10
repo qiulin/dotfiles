@@ -19,7 +19,7 @@
          APR (HTTP/AJP) Connector: /docs/apr.html
          Define a non-SSL HTTP/1.1 Connector on port 8080
     -->
-    <Connector port="8080" address="${jboss.bind.address}"
+    <Connector port="80" address="${jboss.bind.address}"
          maxThreads="250" maxHttpHeaderSize="8192"
          emptySessionPath="true" protocol="HTTP/1.1"
          enableLookups="false" redirectPort="8443" acceptCount="100"
@@ -168,6 +168,9 @@
            <Alias>dev2.qiulin.info</Alias>
          </Host>
 
+         <Host name="test.war">
+             <Alias>test.qiulin.info</Alias>
+         </Host>
       </Engine>
 
    </Service>
