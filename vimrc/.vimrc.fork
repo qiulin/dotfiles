@@ -1,8 +1,14 @@
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
-nmap <leader>ct :ConqueTermVSplit bash<CR>
-nmap <leader>bf :BufExplorer<CR>
-nmap <leader>uf :UpdateTypesFile
+nmap <leader>tb :ConqueTermVSplit bash<CR>
+nmap <leader>be :BufExplorer<CR>
+nmap <leader>ut :UpdateTypesFile<CR>
 let g:tagbar_width = 30
 
+set linespace=1
+set guioptions-=r
+set guifont=SourceCodePro\ 13
+set nospell
+color molokai
+set shell=/bin/bash
 
