@@ -1,14 +1,15 @@
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
-nmap <leader>tb :ConqueTermVSplit bash<CR>
+nmap <leader>tb :ConqueTermVSplit zsh<CR>
 nmap <leader>be :BufExplorer<CR>
 nmap <leader>ut :UpdateTypesFile<CR>
+nmap <leader>tn :tabnew<CR>
 let g:tagbar_width = 30
 
 set linespace=1
 set guioptions-=r
-set guifont=SourceCodePro\ 13
+set guifont=Source\ Code\ Pro\ Powerline\ 13
 set nospell
 color molokai
-set shell=/bin/bash
+set shell=/bin/zsh
 
