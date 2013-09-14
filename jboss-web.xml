@@ -1,4 +1,0 @@
-<jboss-web>
-    <context-root>/</context-root>
-    <virtual-host>test.qiulin.info</virtual-host>
-</jboss-web>
