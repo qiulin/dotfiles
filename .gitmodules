@@ -1,9 +1,12 @@
 [submodule "spf13-vim"]
 	path = spf13-vim
 	url = https://github.com/spf13/spf13-vim.git
+    ignore = dirty
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
+    ignore = dirty
 [submodule "goagent"]
 	path = goagent
 	url = https://github.com/goagent/goagent.git
+    ignore = dirty
