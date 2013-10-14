@@ -8,7 +8,8 @@ let g:tagbar_width = 30
 
 set linespace=1
 set guioptions-=r
-set guifont=Source\ Code\ Pro\ Powerline\ 13
+"set guifont=Source\ Code\ Pro\ Powerline\ 13
+set guifont=Monaco\ 12
 set nospell
 color molokai
 set shell=/bin/zsh
