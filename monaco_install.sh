@@ -1,5 +1,5 @@
 cd ~/Downloads/
-#wget http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf
+wget http://www.gringod.com/wp-upload/software/Fonts/Monaco_Linux.ttf
 
 fonts_path="/usr/share/fonts/truetype/"
 if [ ! -d $fonts_path ]; then
