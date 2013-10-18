@@ -7,4 +7,6 @@ ln -s `pwd`/vimrc/vimrc.bundles.fork ~/.vimrc.bundles.fork
 ln -s `pwd`/vimrc/vimrc.fork ~/.vimrc.fork
 ln -s `pwd`/oh-my-zsh ~/.oh-my-zsh
 ln -s `pwd`/oh-my-zsh/tempates/zshrc.zsh-template ~/.zshrc
+ln -s `pwd`/zsh/custom.zsh ~/.oh-my-zsh/custom/custom.zsh
+
 ./spf13-vim/bootstrap.sh
