@@ -13,4 +13,3 @@ set guifont=Monaco\ 12
 set nospell
 color molokai
 set shell=/bin/zsh
-

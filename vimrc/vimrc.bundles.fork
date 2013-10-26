@@ -1,4 +1,3 @@
-Bundle "qiulin/TagHighlight"
 Bundle "qiulin/conqueshell"
 Bundle "bufexplorer.zip"
 Bundle "rainerborene/vim-pony"
