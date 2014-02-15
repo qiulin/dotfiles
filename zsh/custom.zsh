@@ -21,7 +21,7 @@ export PATH=$PATH:/usr/local/redis/bin/
 
 
 # Alias Directories
-hash -d blog='/home/xcodeman/work/devel/qiulin.github.com/_posts/'
+hash -d blog='/home/xcodeman/work/dev/qiulin.github.com/_posts/'
 
 # Source autojump config file
 [[ -s ~/.autojump/etc/profile.d/autojump.zsh ]] && . ~/.autojump/etc/profile.d/autojump.zsh
