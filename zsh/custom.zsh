@@ -6,9 +6,10 @@ alias ll='ls -l'
 alias la='ls -a'
 alias vi='vim'
 alias grep='grep --color=auto'
+alias goagent='python ~/work/src/scripts/goagent/local/proxy.py'
+alias bb='byobu-tmux'
+alias q='exit'
 alias -s html=vi
-alias -s rb=vi
-alias -s py=vi
 alias -s js=vi
 alias -s c=vi
 alias -s gz='tar -xzvf'

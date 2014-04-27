@@ -1,4 +1,5 @@
-Bundle "qiulin/TagHighlight"
-Bundle "qiulin/conqueshell"
 Bundle "bufexplorer.zip"
-Bundle "rainerborene/vim-pony"
+Bundle "qiulin/TagHighlight"
+Bundle "Shougo/vimproc.vim"
+Bundle "Shougo/vimshell.vim"
+Bundle "Shougo/unite.vim"
