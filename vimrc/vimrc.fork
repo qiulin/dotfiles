@@ -4,6 +4,7 @@ nmap <leader>sh :VimShell<CR>
 nmap <leader>be :BufExplorer<CR>
 nmap <leader>h :UpdateTypesFile<CR>
 nmap <leader>tn :tabnew<CR>
+nmap <leader>pd :Pyclewn pdb %<CR>
 let g:tagbar_width = 30
 
 set linespace=1
@@ -86,3 +87,9 @@ endfunction
 let g:neosnippet#disable_runtime_snippets = {
  \   '_' : 1,
      \ }
+
+"" pymode
+let g:pymode_rope_lookup_project = 0
+
+
+let g:NERDSpaceDelims = 1
