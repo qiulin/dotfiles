@@ -4,13 +4,12 @@ nmap <leader>sh :VimShell<CR>
 nmap <leader>be :BufExplorer<CR>
 nmap <leader>h :UpdateTypesFile<CR>
 nmap <leader>tn :tabnew<CR>
-nmap <leader>pd :Pyclewn pdb %<CR>
-let g:tagbar_width = 30
+let g:tagbar_width = 20
 
 set linespace=1
 set guioptions-=r
 "set guifont=Source\ Code\ Pro\ Powerline\ 13
-set guifont=Monaco\ 12
+set guifont=Ubuntu\ Mono\ 13
 set nospell
 set shell=/bin/zsh
 
@@ -47,49 +46,77 @@ let g:tagbar_type_go = {
 " ruby
 autocmd FileType ruby compiler ruby
 
-"" vimshell
-let g:vimshell_user_prompt = 'fnamemodify(getcwd(), ":~")'
-"let g:vimshell_right_prompt = 'vcs#info("(%s)-[%b]", "(%s)-[%b|%a]")'
-
-if has('win32') || has('win64')
-    " Display user name on Windows.
-    let g:vimshell_prompt = $USERNAME."% "
-else
-    " Display user name on Linux.
-    let g:vimshell_prompt = $USER."% "
-endif
-
-" Initialize execute file list.
-let g:vimshell_execute_file_list = {}
-call vimshell#set_execute_file('txt,vim,c,h,cpp,d,xml,java', 'vim')
-let g:vimshell_execute_file_list['rb'] = 'ruby'
-let g:vimshell_execute_file_list['pl'] = 'perl'
-let g:vimshell_execute_file_list['py'] = 'python'
-call vimshell#set_execute_file('html,xhtml', 'gexe firefox')
-
-autocmd FileType vimshell
-            \ call vimshell#altercmd#define('g', 'git')
-            \| call vimshell#altercmd#define('i', 'iexe')
-            \| call vimshell#altercmd#define('l', 'll')
-            \| call vimshell#altercmd#define('ll', 'ls -l')
-            \| call vimshell#hook#add('chpwd', 'my_chpwd', 'g:my_chpwd')
-
-function! g:my_chpwd(args, context)
-    call vimshell#execute('ls')
-endfunction
-
 autocmd FileType int-* call s:interactive_settings()
 function! s:interactive_settings()
 endfunction
 
-" Like g:neocomplcache_snippets_disable_runtime_snippets
-" behavior(all runtime snippets are disabled).
-let g:neosnippet#disable_runtime_snippets = {
- \   '_' : 1,
-     \ }
-
-"" pymode
+" pymode
 let g:pymode_rope_lookup_project = 0
 
 
 let g:NERDSpaceDelims = 1
+
+
+set cinoptions=^0,p0,t0,C0,(0
+
+"" cscope
+set cscopequickfix=s-,c-,d-,i-,t-,e-
+set cst
+set csto=0
+
+set cursorcolumn
+
+" " for ycm
+" let g:ycm_error_symbol = 'E:'
+" let g:ycm_warning_symbol = 'W:'
+" let g:ycm_min_num_of_chars_for_completion = 1
+" let g:ycm_auto_trigger = 1
+" let g:ycm_server_log_level = 'debug'
+" let g:ycm_auto_start_csharp_server = 0
+" let g:ycm_autoclose_preview_window_after_completion=1
+" let g:ycm_filetype_specific_completion_to_disable = {'python': 1}
+
+" " Trigger configuration. Do not use <tab> if you use
+" " https://github.com/Valloric/YouCompleteMe.
+" let g:UltiSnipsExpandTrigger="<c-k>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" " If you want :UltiSnipsEdit to split your window.
+" let g:UltiSnipsEditSplit="vertical"
+
+"" for pymode
+" let g:pymode_rope_completion = 0 we'll use jedi completion
+" let g:pymode_rope_complete_on_dot = 0
+
+" jedi completion {{{3
+" let g:jedi#auto_initialization = 1
+" let g:jedi#popup_on_dot = 0
+" let g:jedi#goto_assignments_command = "<leader>g"
+" let g:jedi#goto_definitions_command = "gd"
+
+
+let g:marching_clang_command = "/usr/bin/clang"
+let g:marching_include_paths = [
+\   "/usr/include/",
+\   "/usr/local/include/"
+\]
+
+let g:marching_enable_neocomplete = 1
+if !exists('g:neocomplete#force_omni_input_patterns')
+  let g:neocomplete#force_omni_input_patterns = {}
+endif
+
+let g:neocomplete#force_omni_input_patterns.cpp =
+  \ '[^.[:digit:] *\t]\%(\.\|->\)\w*\|\h\w*::\w*'
+
+" 処理のタイミングを制御る
+" 短いほうがより早く補完ウィンドウが表示される
+" ただし、marching.vim 以外の処理にも影響するので注意する
+" set updatetime=1000
+
+" オムニ補完時に補完ワードを挿入したくない場合
+imap <buffer> <C-x><C-o> <Plug>(marching_start_omni_complete)
+
+" キャッシュを削除してからオムに補完を行う
+imap <buffer> <C-x><C-x><C-o> <Plug>(marching_force_start_omni_complete)
