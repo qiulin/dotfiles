@@ -1,11 +1,19 @@
-Bundle "bufexplorer.zip"
-Bundle "qiulin/TagHighlight"
+" Bundle "bufexplorer.zip"
+" Bundle "qiulin/TagHighlight"
 Bundle "brookhong/cscope.vim"
-Bundle "osyo-manga/vim-marching"
-Bundle "Shougo/vimproc.vim"
+" Bundle "osyo-manga/vim-marching"
+" Bundle "Shougo/vimproc.vim"
+Bundle 'einars/js-beautify'
+Bundle 'maksimr/vim-jsbeautify'
+Bundle "fholgado/minibufexpl.vim"
 " Bundle "davidhalter/jedi-vim"
 " Bundle "Shougo/vimshell.vim"
 " Bundle "Shougo/unite.vim"
 " Bundle "EasyColour"
 " Bundle "qiulin/c.vim"
 " Bundle "a.vim"
+Bundle 'xolox/vim-misc'
+Bundle 'xolox/vim-easytags'
+" UnBundle 'vim-scripts/sessionman.vim'
+" Bundle 'xolox/vim-session'
+Bundle "kshenoy/vim-signature"
