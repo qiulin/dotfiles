@@ -4,14 +4,15 @@ nmap <leader>q :q<CR>
 " nmap <leader>be :BufExplorer<CR>
 " nmap <leader>h :UpdateTypesFile<CR>
 " nmap <leader>tn :tabnew<CR>
-let g:tagbar_width = 20
+let g:tagbar_width = 30
 
 set linespace=1
 set guioptions-=r
-"set guifont=Source\ Code\ Pro\ Powerline\ 13
-set guifont=Ubuntu\ Mono\ 13
+" set guifont=Monaco\ 13
 set nospell
 set shell=/bin/zsh
+color molokai
+
 
 " for golang
 let g:tagbar_type_go = {

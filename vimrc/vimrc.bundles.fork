@@ -6,14 +6,15 @@ Bundle "brookhong/cscope.vim"
 Bundle 'einars/js-beautify'
 Bundle 'maksimr/vim-jsbeautify'
 Bundle "fholgado/minibufexpl.vim"
-" Bundle "davidhalter/jedi-vim"
-" Bundle "Shougo/vimshell.vim"
-" Bundle "Shougo/unite.vim"
+Bundle "Shougo/vimshell.vim"
+Bundle "Shougo/unite.vim"
 " Bundle "EasyColour"
-" Bundle "qiulin/c.vim"
-" Bundle "a.vim"
 Bundle 'xolox/vim-misc'
 Bundle 'xolox/vim-easytags'
+Bundle 'xolox/vim-lua-plugin'
+Bundle 'xolox/vim-lua-inspect'
 " UnBundle 'vim-scripts/sessionman.vim'
 " Bundle 'xolox/vim-session'
 Bundle "kshenoy/vim-signature"
+Bundle "burnettk/vim-angular"
+
