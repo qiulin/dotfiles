@@ -1,6 +1,5 @@
 nmap <leader>w :w<CR>
 nmap <leader>q :q<CR>
-" nmap <leader>sh :VimShell<CR>
 " nmap <leader>be :BufExplorer<CR>
 " nmap <leader>h :UpdateTypesFile<CR>
 " nmap <leader>tn :tabnew<CR>
@@ -8,10 +7,12 @@ let g:tagbar_width = 30
 
 set linespace=1
 set guioptions-=r
-" set guifont=Monaco\ 13
 set nospell
+" set guifont=Monaco\ 13
 set shell=/bin/zsh
-color molokai
+" color molokai
+set so=5
+nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
 
 " for golang
@@ -62,19 +63,22 @@ set cinoptions=^0,p0,t0,C0,(0
 
 "" cscope
 set cscopequickfix=s-,c-,d-,i-,t-,e-
-set cst
-set csto=0
+""set cst
+""set csto=0
 
 set cursorcolumn
 
 map <c-f> :call JsBeautify()<cr>
 " or
 autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-" for html
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>"
 
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplBuffersNeeded = 1
 let g:miniBufExplSplitToEdge = 1
+
+
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-k>"
+let g:UltiSnipsJumpBackwardTrigger="<c-j>"
