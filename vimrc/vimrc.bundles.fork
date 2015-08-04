@@ -9,13 +9,8 @@ Bundle "fholgado/minibufexpl.vim"
 " Bundle "Shougo/vimshell.vim"
 " Bundle "Shougo/unite.vim"
 " Bundle "EasyColour"
-" Bundle 'xolox/vim-misc'
-" Bundle 'xolox/" vim-easytags'
-" Bundle 'xolox/vim-lua-ftplugin'
-" Bundle 'xolox/vim-lua-inspect'
-" UnBundle 'vim-scripts/sessionman.vim'
-" Bundle 'xolox/vim-session'
 Bundle "kshenoy/vim-signature"
 Bundle "burnettk/vim-angular"
 Bundle 'elixir-lang/vim-elixir'
 " Bundle 'lua.vim'
+
