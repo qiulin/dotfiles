@@ -13,4 +13,4 @@ Bundle "kshenoy/vim-signature"
 Bundle "burnettk/vim-angular"
 Bundle 'elixir-lang/vim-elixir'
 " Bundle 'lua.vim'
-
+Bundle "nginx.vim"

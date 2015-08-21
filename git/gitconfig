@@ -20,3 +20,5 @@
 	default = simple
 
 
+[core]
+	excludesfile = /home/qiulin/.gitignore_global
